@@ -21,6 +21,3 @@ def count_words(file: str):
     text = clean_text(text)
     words = text.split()
     return Counter(words)
-
-
-print(count_words('./zen.txt'))
