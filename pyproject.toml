@@ -7,9 +7,13 @@ license = "GNU General Public License v3.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-matplotlib = "^3.10.1"
+python = ">=3.12"
+matplotlib = ">=3.10.1"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.5"
+pytest-cov = ">=6.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
