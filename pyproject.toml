@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "testpkgs"
-version = "0.1.0"
+version = "0.1.1"
 description = "Calculate word count in a text file!"
 authors = ["Lu Hou Yang"]
 license = "GNU General Public License v3.0"
