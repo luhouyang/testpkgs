@@ -34,8 +34,11 @@ jobs:
       run: poetry run make html --directory docs/
   
   cd:
+    permissions:
+      id-token: write
+      contents: write
     needs: ci
-    if: github.event_name == 'push' && github.ref == 'ref/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     # Set up operating system
     runs-on: ubuntu-latest
